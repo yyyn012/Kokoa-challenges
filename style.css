@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.title {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.color-wrap {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 510px;
+  height: 760px;
+}
+
+.color-wrap > div {
+  position: relative;
+  width: 220px;
+  height: 350px;
+  border: 5px solid #fff;
+}
+
+.color-wrap > div:first-child {
+  background-color: tomato;
+}
+
+.color-wrap > div:nth-child(2) {
+  background-color: #008080;
+}
+
+.color-wrap > div:nth-child(3) {
+  background-color: burlywood;
+}
+
+.color-wrap > div:last-child {
+  background-color: thistle;
+}
+
+.tag {
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  height: 120px;
+  background-color: #fff;
+}
+
+.name,
+.number {
+  font-weight: 800;
+  padding-left: 10px;
+}
