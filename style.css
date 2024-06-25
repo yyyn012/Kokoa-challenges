@@ -1,59 +1,63 @@
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #f5f5f5;
-  font-family: "Times New Roman", Times, serif;
-}
-
-.title {
-  text-align: center;
-  font-size: 45px;
-  font-weight: 700;
-}
-
-.color-wrap {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  width: 510px;
-  height: 760px;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #6bbcbe;
 }
 
-.color-wrap > div {
-  position: relative;
-  width: 220px;
-  height: 350px;
-  border: 5px solid #fff;
+.circle {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 
-.color-wrap > div:first-child {
-  background-color: tomato;
-}
-
-.color-wrap > div:nth-child(2) {
-  background-color: #008080;
-}
-
-.color-wrap > div:nth-child(3) {
-  background-color: burlywood;
-}
-
-.color-wrap > div:last-child {
-  background-color: thistle;
-}
-
-.tag {
-  position: absolute;
-  top: 30px;
-  width: 100%;
-  height: 120px;
+.circle > div {
+  width: 15px;
+  height: 15px;
   background-color: #fff;
+  border-radius: 50%;
+  margin: 20px;
 }
 
-.name,
-.number {
-  font-weight: 800;
-  padding-left: 10px;
+.circle > div:first-child {
+  animation: circleMotion 2s infinite;
+}
+
+@keyframes circleMotion {
+  0% {
+    translate-xx: 40px;
+  }
+  25% {
+  }
+  50% {
+  }
+  75% {
+  }
+  100% {
+  }
+}
+
+.stick {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 250px;
+  height: 200px;
+  border: 1px solid #fff;
+}
+
+.stick > div {
+  width: 20px;
+  height: 100px;
+  background-color: #fff;
+  animation: stickMotion 2s infinite;
+  animation-delay: 1s;
+  margin: 5px;
 }
