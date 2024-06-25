@@ -8,56 +8,85 @@ body {
 }
 
 .circle {
-  width: 200px;
-  height: 200px;
-  border: 1px solid #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
+  position: relative;
+  animation: circleMotion 1s ease-in-out infinite;
 }
 
 .circle > div {
-  width: 15px;
-  height: 15px;
-  background-color: #fff;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
-  margin: 20px;
+  background-color: #fff;
 }
 
 .circle > div:first-child {
-  animation: circleMotion 2s infinite;
+  position: absolute;
+  top: 0px;
+  left: -55px;
+}
+
+.circle > div:last-child {
+  position: absolute;
+  top: 0px;
+  left: 55px;
 }
 
 @keyframes circleMotion {
   0% {
-    translate-xx: 40px;
-  }
-  25% {
+    transform: rotate(0deg);
   }
   50% {
-  }
-  75% {
+    transform: rotate(180deg);
   }
   100% {
+    transform: rotate(180deg);
   }
 }
 
 .stick {
+  margin-top: 100px;
+  width: 200px;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  width: 250px;
-  height: 200px;
-  border: 1px solid #fff;
 }
 
 .stick > div {
   width: 20px;
   height: 100px;
   background-color: #fff;
-  animation: stickMotion 2s infinite;
-  animation-delay: 1s;
+  animation: stickMotion 1s infinite ease-out;
   margin: 5px;
+}
+
+.stick > div:first-child {
+  animation-delay: 0.5s;
+}
+.stick > div:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.stick > div:nth-child(3) {
+  animation-delay: 0.7s;
+}
+.stick > div:nth-child(4) {
+  animation-delay: 0.8s;
+}
+.stick > div:last-child {
+  animation-delay: 0.9s;
+}
+
+@keyframes stickMotion {
+  0% {
+    transform: scaleY(1);
+  }
+
+  50% {
+    transform: scaleY(1.5);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
 }
