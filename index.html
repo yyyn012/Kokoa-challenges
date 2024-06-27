@@ -11,11 +11,13 @@
     <title>library</title>
   </head>
   <body>
-    <header>
-      <i class="fa-solid fa-bars"></i>
-      <h2>library</h2>
-      <i class="fa-solid fa-cart-shopping"></i>
-    </header>
+    <div class="header-color">
+      <header>
+        <i class="fa-solid fa-bars"></i>
+        <h2>library</h2>
+        <i class="fa-solid fa-cart-shopping"></i>
+      </header>
+    </div>
 
     <div class="search">
       <input type="text" placeholder="Search books..." maxlength="50" />
@@ -23,11 +25,11 @@
     </div>
 
     <div class="main">
-      <div class="bookDay">
-        <div class="bookDay-wrap">
-          <h2>Book of the day</h2>
-          <img src="/img/no fixed abode.jpg" alt="no fixed abode" />
-          <div class="bookDayInfo">
+      <div class="bookDay-wrap">
+        <h2>Book of the day</h2>
+        <img src="/img/no fixed abode.jpg" alt="no fixed abode" />
+        <div class="bookDayInfo">
+          <div class="bookDayText">
             <h3>No Fixed Abode</h3>
             <span>Journey Through</span>
             <div class="star">
@@ -35,23 +37,82 @@
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
+              <i class="fa-solid fa-star"></i>
             </div>
-            <div class="btn">
-              <button>Journey</button>
-              <button>Biograghy</button>
-            </div>
+          </div>
+
+          <div class="bookDay-btn">
+            <button>Journey</button>
+            <button>Biograghy</button>
+          </div>
+          <div class="bookNow">
             <div class="bookMark">
               <i class="fa-solid fa-bookmark"></i>
             </div>
-            <div class="bookNow"></div>
+            <a href="#">Book Now</a>
           </div>
         </div>
       </div>
 
-      <div class="popular-authors">
-        <div class="authorsImg"></div>
-        <div class="authorsInfo"></div>
+      <div class="topAdventures-wrap">
+        <h2>Top Adventures</h2>
+        <div class="topAdventures">
+          <div class="img-wrap">
+            <img src="/img/hold still.jpg" alt="hold still" />
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="img-wrap">
+            <img src="/img/jungle book.jpg" alt="jungle book" />
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="img-wrap">
+            <img src="/img/junble book2.jpg" alt="jungle book2" />
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="img-wrap">
+            <img src="/img/cosmos.jpg" alt="cosmos" />
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popular-wrap">
+        <h2>Popular authors</h2>
+        <img src="/img/author.jpg" alt="author" />
+        <div class="authorsInfo">
+          <h3>
+            George Raymond <br />
+            Richard Martin
+          </h3>
+          <span
+            >Modern American science fiction writer, screenwriter, producer and
+            editor, winner of many literary awards.</span
+          >
+        </div>
       </div>
     </div>
   </body>
