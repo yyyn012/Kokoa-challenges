@@ -1,313 +1,82 @@
-/* body {
-  border: 5px solid #00c6ad;
-  height: 820px;
-  width: 350px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 30px;
-}
-
-header {
-  width: 100%;
-  height: 80px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.fa-x {
-  font-size: 30px;
-  font-weight: bold;
-  line-height: 80px;
-}
-
-header > span {
-  display: inline-block;
-  width: 250px;
-  padding-right: 30px;
-  font-size: 30px;
-  font-weight: bold;
-  line-height: 80px;
-  text-align: center;
-}
-
-.current-playing {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding-top: 20px;
-}
-
-.mountain {
-  width: 140px;
-  height: 140px;
-  border: 2px solid #000;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffbd11;
-}
-
-.mountain > .fa-image {
-  font-size: 50px;
-  color: #fff;
-}
-
-.current-playing > .title > span {
-  font-size: 40px;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  line-height: 45px;
-}
-
-.button-area {
-  width: 100%;
-  height: 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  padding-top: 40px;
-}
-
-.button-area > div {
-  border: 2px solid #000;
-  border-width: 2px 3px 6px 3px;
-}
-
-.button-area > .play {
-  width: 160px;
-  height: 60px;
-  border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.play > .fa-play {
-  font-size: 20px;
-}
-
-.play > h2 {
-  margin-left: 10px;
-  font-size: 28px;
-}
-
-.heart,
-.plus {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.heart > i,
-.plus > i {
-  font-size: 30px;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-.musicPlaylist {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: left;
-  width: 100%;
-  padding-top: 10px;
-}
-
-.musicPlaylist > li {
-  width: 100%;
-  height: 80px;
-  display: flex;
-  justify-items: space-evenly;
-  align-items: center;
-  padding-bottom: 20px;
-}
-
-.musicPlaylist > li > .colors {
-  width: 60px;
-  height: 60px;
-  border: 2px solid #000;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
-  margin-right: 15px;
-}
-
-.musicPlaylist > li:nth-child(1) > .colors {
-  background-color: #f85a2a;
-}
-
-.musicPlaylist > li:nth-child(2) > .colors {
-  background-color: #ff8bbc;
-}
-
-.musicPlaylist > li:nth-child(3) > .colors {
-  background-color: #1947e5;
-}
-
-.musicPlaylist > li:nth-child(4) > .colors {
-  background-color: #00c6ad;
-}
-
-.text {
-  padding-bottom: 10px;
-}
-
-.text > h3 {
-  font-size: 25px;
-  line-height: 1px;
-} */
-
-@import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;600;700&display=swap");
-* {
-  box-sizing: border-box;
-}
-
 body {
-  font-family: "Baloo Tamma 2", cursive;
-  background-color: #00c6ad;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-}
-
-.wrapper {
-  background-color: white;
-  width: 310px;
-  padding: 50px 30px 15px 30px;
+  flex-direction: column;
 }
 
 header {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  margin-bottom: 50px;
-}
-
-header i {
   position: absolute;
-  top: -5px;
-  left: 0;
-  font-size: 28px;
-}
-
-h1 {
-  font-weight: 600;
-  font-size: 24px;
-}
-
-.main-song {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.main-song__cover {
-  width: 110px;
-  height: 110px;
-  background-color: #ffbd11;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid black;
-  border-radius: 10px;
-  margin-right: 0px;
-}
-
-.main-song__cover i {
-  color: white;
-}
-
-.main-song__data {
-  width: 50%;
-}
-
-.main-song__title {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  line-height: 1.4;
-}
-
-.main-song__author {
-  font-size: 18px;
-  font-weight: 600;
-  opacity: 0.7;
-}
-
-.btns {
+  top: 0;
+  background-color: #ffce33;
+  width: 100vw;
+  height: 100px;
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
-  margin-bottom: 40px;
-}
-
-.btns__btn {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  border: 2px solid black;
-  border-bottom-width: 5px;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  flex-direction: row;
 }
 
-.btns__btn--big {
-  width: 50%;
-  font-size: 18px;
-  font-weight: 600;
-  border-radius: 15px;
-}
-
-.btns__btn--big span {
-  margin-left: 5px;
+header > i {
+  padding: 0 35px;
   font-size: 20px;
 }
 
-.song-list__song {
+.search {
+  position: absolute;
+  top: 80px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
-}
-.song-list__cover {
-  width: 50px;
-  height: 50px;
-  background-color: #f85a2a;
-  border: 2px solid black;
-  border-radius: 10px;
-  margin-right: 10px;
+  width: 75vw;
+  height: 70px;
+  border: 1px solid #fff;
+  border-radius: 40px;
+  background-color: #fff;
+  box-shadow: 0 0 5px 1px rgba(0.2, 0.2, 0.2, 0.2);
 }
 
-.song-list__data h5 {
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 5px;
+.search > input {
+  border: none;
+  width: 60vw;
+  height: 65px;
+  outline: none;
 }
 
-.song-list__data h6 {
-  opacity: 0.8;
+.search > input:focus {
+  outline: none;
 }
 
-.song-list {
+.search > i {
+  position: absolute;
+  right: 30px;
+  cursor: pointer;
+  color: #ccc;
+}
+
+.main {
+  position: absolute;
+  border: 1px solid red;
+  width: 75vw;
+  height: 500px;
+  top: 200px;
+}
+
+.bookDay-wrap {
+  position: absolute;
+  top: 0;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.bookDay-wrap > img {
+  width: 130px;
+  height: 190px;
+  padding: 0;
 }

@@ -3,121 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/7156c50ef7.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>library</title>
   </head>
   <body>
-    <!-- <header>
-      <div><i class="fa-solid fa-x"></i></div>
-      <span>Playlist</span>
+    <header>
+      <i class="fa-solid fa-bars"></i>
+      <h2>library</h2>
+      <i class="fa-solid fa-cart-shopping"></i>
     </header>
 
-    <div class="current-playing">
-      <div class="mountain borderRadius">
-        <i class="fa-regular fa-image"></i>
-      </div>
-      <div class="title">
-        <span>Random</span>
-        <span>Love</span>
-        <h3>by Divay Kapoor</h3>
-      </div>
+    <div class="search">
+      <input type="text" placeholder="Search books..." maxlength="50" />
+      <i class="fa-solid fa-magnifying-glass"></i>
     </div>
 
-    <div class="button-area">
-      <div class="play borderWidth">
-        <i class="fa-solid fa-play"></i>
-        <h2>Play</h2>
-      </div>
-      <div class="heart">
-        <i class="fa-regular fa-heart"></i>
-      </div>
-      <div class="plus">
-        <i class="fa-solid fa-plus"></i>
-      </div>
-    </div>
-
-    <ul class="musicPlaylist">
-      <li>
-        <div class="colors"></div>
-        <div class="text">
-          <h3>Matargasti</h3>
-          <span>Mohit Chauhan</span>
-        </div>
-      </li>
-      <li>
-        <div class="colors"></div>
-        <div class="text">
-          <h3>Attitude</h3>
-          <span>Lewis OfMan Attitude</span>
-        </div>
-      </li>
-      <li>
-        <div class="colors"></div>
-        <div class="text">
-          <h3>Try Everything</h3>
-          <span>Shakira Zootopia</span>
-        </div>
-      </li>
-      <li>
-        <div class="colors"></div>
-        <div class="text">
-          <h3>Sunflower</h3>
-          <span>Joseph Vincent Sunflower</span>
-        </div>
-      </li>
-    </ul> -->
-
-    <div class="wrapper">
-      <header>
-        <i class="fas fa-times"></i>
-        <h1>Playlist</h1>
-      </header>
-      <main>
-        <section class="main-song">
-          <div class="main-song__cover">
-            <i class="far fa-image fa-3x"></i>
+    <div class="main">
+      <div class="bookDay">
+        <div class="bookDay-wrap">
+          <h2>Book of the day</h2>
+          <img src="/img/no fixed abode.jpg" alt="no fixed abode" />
+          <div class="bookDayInfo">
+            <h3>No Fixed Abode</h3>
+            <span>Journey Through</span>
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="btn">
+              <button>Journey</button>
+              <button>Biograghy</button>
+            </div>
+            <div class="bookMark">
+              <i class="fa-solid fa-bookmark"></i>
+            </div>
+            <div class="bookNow"></div>
           </div>
-          <div class="main-song__data">
-            <h3 class="main-song__title">We Love 김치!</h3>
-            <h5 class="main-song__author">By Lynn</h5>
-          </div>
-        </section>
-        <section class="btns">
-          <span class="btns__btn btns__btn--big">
-            <i class="fas fa-play fa-xs"></i>
-            <span>Play</span>
-          </span>
-          <span class="btns__btn"><i class="fas fa-heart"></i></span>
-          <span class="btns__btn"><i class="fas fa-plus"></i></span>
-        </section>
-        <ul class="song-list">
-          <li class="song-list__song">
-            <div class="song-list__cover"></div>
-            <div class="song-list__data">
-              <h5>Corona Sucks</h5>
-              <h6>니꼬</h6>
-            </div>
-          </li>
-          <li class="song-list__song">
-            <div class="song-list__cover"></div>
-            <div class="song-list__data">
-              <h5>Corona Sucks</h5>
-              <h6>니꼬</h6>
-            </div>
-          </li>
-          <li class="song-list__song">
-            <div class="song-list__cover"></div>
-            <div class="song-list__data">
-              <h5>Corona Sucks</h5>
-              <h6>니꼬</h6>
-            </div>
-          </li>
-        </ul>
-      </main>
+        </div>
+      </div>
+
+      <div class="popular-authors">
+        <div class="authorsImg"></div>
+        <div class="authorsInfo"></div>
+      </div>
     </div>
   </body>
 </html>
