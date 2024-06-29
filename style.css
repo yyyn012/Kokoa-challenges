@@ -1,4 +1,4 @@
-body {
+/* body {
   padding: 0;
   margin: 0 auto;
   width: 500px;
@@ -192,8 +192,6 @@ header > i {
   border-radius: 5px;
 }
 
-/* Top Adventures */
-
 .topAdventures-wrap {
   top: 300px;
   overflow-x: hidden;
@@ -221,8 +219,6 @@ header > i {
   font-size: 11px;
 }
 
-/* popular author */
-
 .popular-wrap {
   top: 550px;
 }
@@ -243,4 +239,233 @@ header > i {
   display: inline-block;
   width: 200px;
   font-size: 15px;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 500px;
+  height: 1150px;
+  border: solid;
+  border-color: black;
+  border-width: 0.1px;
+}
+
+.header {
+  background-color: #ffce33;
+  height: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header span {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.header .fa-solid {
+  margin: 0px 20px;
+}
+
+.searchbar {
+  width: 500px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.searchbar div {
+  position: relative;
+  background-color: white;
+  width: 450px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  margin-top: -30px;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.searchbar div span {
+  margin-left: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.searchbar div .fa-solid {
+  color: rgba(0, 0, 0, 0.2);
+  margin-right: 20px;
+}
+
+.bookoftheday__title {
+  font-size: 30px;
+  font-weight: 900;
+  margin-left: 20px;
+}
+
+.bookoftheday__contents {
+  display: flex;
+  margin-top: 20px;
+}
+
+.bookoftheday__contents__img {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 320px;
+  margin-left: 20px;
+}
+
+.bookoftheday__contents__img img {
+  width: 180px;
+  height: 280px;
+  border-radius: 10px;
+}
+
+.bookoftheday__contents__info {
+  width: 320px;
+  height: 320px;
+  margin-left: 20px;
+}
+
+.bookoftheday__contents__info__title {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.bookoftheday__contents__info__writer {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.bookoftheday__contents__info_star {
+  margin-top: 20px;
+}
+
+.bookoftheday__contents__info__btn {
+  display: flex;
+}
+
+.bookoftheday__contents__info__btn div {
+  width: 120px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.bookoftheday__contents__info__book {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.bookoftheday__contents__info__book .flag {
+  width: 50px;
+  height: 50px;
+  background-color: #ffce33;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookoftheday__contents__info__book .booknow {
+  width: 150px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 50px;
+  margin-right: 20px;
+}
+
+.topadventures {
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 300px;
+}
+
+.topadventures__title {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.topadventures__contents {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.topadventures__contents__book__img {
+  margin-bottom: 10px;
+}
+
+.topadventures__contents__book__img img {
+  width: 125px;
+  height: 195px;
+  margin-right: 20px;
+}
+
+.popularauthors__title {
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.popularauthors__contents {
+  display: flex;
+  width: 500px;
+}
+
+.popularauthors__contents__img {
+  width: 300px;
+  height: 300px;
+  margin-left: 20px;
+}
+
+.popularauthors__contents__img img {
+  width: 180px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.popularauthors__contents__info {
+  margin-left: 20px;
+}
+
+.popularauthors__contents__info div:nth-child(1) {
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.popularauthors__contents__info div:nth-child(2) {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.2);
 }
