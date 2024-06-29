@@ -3,245 +3,139 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/7156c50ef7.js"
       crossorigin="anonymous"
     ></script>
-    <title>library</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>music play app</title>
   </head>
-  <!-- <body>
-    <div class="header-color">
-      <header>
-        <i class="fa-solid fa-bars"></i>
-        <h2>library</h2>
-        <i class="fa-solid fa-cart-shopping"></i>
-      </header>
-    </div>
-
-    <div class="search">
-      <input type="text" placeholder="Search books..." maxlength="50" />
-      <i class="fa-solid fa-magnifying-glass"></i>
-    </div>
-
-    <div class="main">
-      <div class="bookDay-wrap">
-        <h2>Book of the day</h2>
-        <img src="/img/no fixed abode.jpg" alt="no fixed abode" />
-        <div class="bookDayInfo">
-          <div class="bookDayText">
-            <h3>No Fixed Abode</h3>
-            <span>Journey Through</span>
-            <div class="star">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-          </div>
-
-          <div class="bookDay-btn">
-            <button>Journey</button>
-            <button>Biograghy</button>
-          </div>
-          <div class="bookNow">
-            <div class="bookMark">
-              <i class="fa-solid fa-bookmark"></i>
-            </div>
-            <a href="#">Book Now</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="topAdventures-wrap">
-        <h2>Top Adventures</h2>
-        <div class="topAdventures">
-          <div class="img-wrap">
-            <img src="/img/hold still.jpg" alt="hold still" />
-            <div class="star">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-          </div>
-          <div class="img-wrap">
-            <img src="/img/jungle book.jpg" alt="jungle book" />
-            <div class="star">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-          </div>
-          <div class="img-wrap">
-            <img src="/img/junble book2.jpg" alt="jungle book2" />
-            <div class="star">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-          </div>
-          <div class="img-wrap">
-            <img src="/img/cosmos.jpg" alt="cosmos" />
-            <div class="star">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="popular-wrap">
-        <h2>Popular authors</h2>
-        <img src="/img/author.jpg" alt="author" />
-        <div class="authorsInfo">
-          <h3>
-            George Raymond <br />
-            Richard Martin
-          </h3>
-          <span
-            >Modern American science fiction writer, screenwriter, producer and
-            editor, winner of many literary awards.</span
-          >
-        </div>
-      </div>
-    </div>
-  </body> -->
   <body>
-    <div class="container">
-      <div class="header">
-        <div class="header__sidebtn">
-          <i class="fa-solid fa-bars fa-2x"></i>
-        </div>
-        <span class="header__title">library</span>
-        <div class="header__shoppingbag">
-          <i class="fa-solid fa-basket-shopping fa-2x"></i>
+    <div class="playList-wrap">
+      <header>
+        <i class="fa-solid fa-arrow-left"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </header>
+
+      <div class="creator-wrap">
+        <img src="/image/singer cover.webp" alt="singer cover" />
+        <span class="title">Beenzino</span>
+        <span class="txt_span">Rap, Hip-Hop</span>
+      </div>
+
+      <div class="shuffle">
+        <a href="#" class="shuffleBtn">Shuffle</a>
+        <div class="like">
+          <i class="fa-solid fa-heart"></i>
+          <span class="num">212 971</span>
         </div>
       </div>
-      <div class="searchbar">
-        <div class="searchbar_box">
-          <span>Search books...</span>
-          <i class="fa-solid fa-magnifying-glass"></i>
+
+      <div class="playlist">
+        <div class="list">
+          <img src="/image/12.jpg" alt="" />
+
+          <div class="span_div_column">
+            <span class="txt_span">Beenzino</span>
+            <span class="song_title"> 12 </span>
+          </div>
+
+          <i class="fa-solid fa-ellipsis-vertical txt_span"></i>
+        </div>
+
+        <div class="list">
+          <img src="/image/albem.jpg" alt="24:26" />
+
+          <div class="span_div_column">
+            <span class="txt_span">Beenzino</span>
+            <span class="song_title"> 24 : 26 </span>
+          </div>
+
+          <i class="fa-solid fa-ellipsis-vertical txt_span"></i>
+        </div>
+
+        <div class="list">
+          <img src="/image/jazzyfact.jpg" alt="jazzyfact" />
+
+          <div class="span_div_column">
+            <span class="txt_span">Beenzino</span>
+            <span class="song_title"> jazzyfact </span>
+          </div>
+
+          <i class="fa-solid fa-ellipsis-vertical txt_span"></i>
+        </div>
+
+        <div class="list">
+          <img src="/image/nowitzki.jpg" alt="nowitzki" />
+
+          <div class="span_div_column">
+            <span class="txt_span">Beenzino</span>
+            <span class="song_title"> nowitzki </span>
+          </div>
+
+          <i class="fa-solid fa-ellipsis-vertical txt_span"></i>
         </div>
       </div>
-      <div class="bookoftheday">
-        <div class="bookoftheday__title">Book of the day</div>
-        <div class="bookoftheday__contents">
-          <div class="bookoftheday__contents__img">
-            <img src="https://m.media-amazon.com/images/I/512eZ2k0z0L.jpg" />
-          </div>
-          <div class="bookoftheday__contents__info">
-            <div class="bookoftheday__contents__info__title">
-              No Fixed Abode
-            </div>
-            <div class="bookoftheday__contents__info__writer">
-              Journey Through
-            </div>
-            <div class="bookoftheday__contents__info__star">
-              <i class="fa-solid fa-star" style="color: #ffce33"></i>
-              <i class="fa-solid fa-star" style="color: #ffce33"></i>
-              <i class="fa-solid fa-star" style="color: #ffce33"></i>
-              <i class="fa-solid fa-star" style="color: #ffce33"></i>
-              <i class="fa-solid fa-star" style="color: #e3e3e3"></i>
-            </div>
-            <div class="bookoftheday__contents__info__btn">
-              <div>Journey</div>
-              <div>Biography</div>
-            </div>
-            <div class="bookoftheday__contents__info__book">
-              <div class="flag"><i class="fa-solid fa-bookmark fa-lg"></i></div>
-              <div class="booknow">Book Now</div>
-            </div>
-          </div>
+
+      <div class="controlBox-wrap">
+        <div class="span_div_column">
+          <span class="txt_span">Beenzino</span>
+          <span class="song_title"> nowitzki </span>
         </div>
-      </div>
-      <div class="topadventures">
-        <div class="topadventures__title">Top Adventures</div>
-        <div class="topadventures__contents">
-          <div class="topadventures__contents__book">
-            <div class="topadventures__contents__book__img">
-              <img
-                src="https://image.yes24.com/momo/TopCate2343/MidCate006/234259264.jpg"
-              />
-            </div>
-            <div class="topadventures__contents__info__star">
-              <i class="fa-solid fa-star" style="color: #ffce33"></i>
-              <i class="fa-solid fa-star" style="color: #ffce33"></i>
-              <i class="fa-solid fa-star" style="color: #ffce33"></i>
-              <i class="fa-solid fa-star" style="color: #ffce33"></i>
-              <i class="fa-solid fa-star" style="color: #e3e3e3"></i>
-            </div>
-          </div>
-          <div class="topadventures__contents__book">
-            <div class="topadventures__contents__book__img">
-              <img
-                src="https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9780241440759.jpg"
-              />
-            </div>
-            <div class="topadventures__contents__info__star">
-              <i class="fa-solid fa-star" style="color: #ffce33"></i>
-              <i class="fa-solid fa-star" style="color: #ffce33"></i>
-              <i class="fa-solid fa-star" style="color: #ffce33"></i>
-              <i class="fa-solid fa-star" style="color: #ffce33"></i>
-              <i class="fa-solid fa-star" style="color: #e3e3e3"></i>
-            </div>
-          </div>
-          <div class="topadventures__contents__book">
-            <div class="topadventures__contents__book__img">
-              <img src="https://image.yes24.com/goods/113463430/XL" />
-            </div>
-            <div class="topadventures__contents__info__star">
-              <i class="fa-solid fa-star" style="color: #ffce33"></i>
-              <i class="fa-solid fa-star" style="color: #ffce33"></i>
-              <i class="fa-solid fa-star" style="color: #ffce33"></i>
-              <i class="fa-solid fa-star" style="color: #ffce33"></i>
-              <i class="fa-solid fa-star" style="color: #e3e3e3"></i>
-            </div>
-          </div>
-          <div class="topadventures__contents__book">
-            <div class="topadventures__contents__book__img">
-              <img src="https://image.yes24.com/goods/1263/XL" />
-            </div>
-            <div class="topadventures__contents__info__star">
-              <i class="fa-solid fa-star" style="color: #ffce33"></i>
-              <i class="fa-solid fa-star" style="color: #ffce33"></i>
-              <i class="fa-solid fa-star" style="color: #ffce33"></i>
-              <i class="fa-solid fa-star" style="color: #ffce33"></i>
-              <i class="fa-solid fa-star" style="color: #e3e3e3"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="popularauthors">
-        <div class="popularauthors__title">Popular authors</div>
-        <div class="popularauthors__contents">
-          <div class="popularauthors__contents__img">
-            <img
-              src="https://i.namu.wiki/i/VnuExdUbSRU51vRNMAF489_8Nof8wSekzyEHeHTo36E4H-SM_yHkfjnWnKdrXCVDW5swk5fV1FGNjwTkgnHChQ.webp"
-            />
-          </div>
-          <div class="popularauthors__contents__info">
-            <div>George Raymond Richard Martin</div>
-            <div>
-              Modern American science fiction writer, screenwriter, producer and
-              editor, winner of many literary awards.
-            </div>
-          </div>
+
+        <div class="controlBox">
+          <i class="fa-solid fa-backward-fast"></i>
+
+          <i class="fa-solid fa-pause"></i>
+
+          <i class="fa-solid fa-forward-fast"></i>
         </div>
       </div>
     </div>
-    <script
-      src="https://kit.fontawesome.com/b5ac015c11.js"
-      crossorigin="anonymous"
-    ></script>
+
+    <div class="currentlyPlaying-wrap">
+      <header>
+        <i class="fa-solid fa-arrow-left"></i>
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+      </header>
+
+      <div class="currentImg">
+        <img src="/image/jazzyfact.jpg" alt="jazzyfact" />
+
+        <div class="span_div_column">
+          <span class="title">Jazzyfact</span
+          ><span class="txt_span">Beenzino</span>
+        </div>
+      </div>
+
+      <div class="playingBar-wrap">
+        <div class="span_div_row">
+          <span class="num">1:56</span>
+          <span class="num">2:21</span>
+        </div>
+
+        <div class="playingBar">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <div class="controlBoxPart2-wrap">
+        <i class="fa-solid fa-repeat txt_i"></i>
+
+        <div class="controlBoxPart2">
+          <i class="fa-solid fa-backward-fast"></i>
+
+          <div>
+            <i class="fa-solid fa-play"></i>
+          </div>
+
+          <i class="fa-solid fa-forward-fast"></i>
+        </div>
+
+        <i class="fa-solid fa-shuffle txt_i"></i>
+      </div>
+    </div>
   </body>
 </html>
